@@ -13,7 +13,6 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
