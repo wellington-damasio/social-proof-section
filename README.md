@@ -29,7 +29,7 @@ Users should be able to:
 ![](/screenshots/mobile-social-proof-section-p2.png)
 
 ### Links
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
+- Live Site URL: [GitHub Pages](https://wellington-damasio.github.io/social-proof-section/)
 
 ## My process
 
