@@ -30,9 +30,7 @@ Users should be able to:
 ![](/screenshots/mobile-social-proof-section-p2.png)
 
 ### Links
-
-- Solution URL: [Add solution URL here](https://github.com/wellington-damasio/social-proof-section)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
 
 ## My process
 
