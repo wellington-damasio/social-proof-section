@@ -1,0 +1,233 @@
+/* --------------------------------------------
+                     Colors
+-------------------------------------------- */
+:root {
+    --veryDark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --darkGrayish-magenta: hsl(303, 10%, 53%);
+    --lightGrayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* --------------------------------------------
+                  CSS Resets
+-------------------------------------------- */
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+body::before {
+    content: url('/images/bg-pattern-top-mobile.svg');
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+body::after {
+    content: url('/images/bg-pattern-bottom-mobile.svg');
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* --------------------------------------------
+                  Components
+-------------------------------------------- */
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+}
+
+/* --------------------------------------------
+            Social Proof Component
+-------------------------------------------- */
+.social-proof {
+    margin-bottom: 4rem;
+}
+
+.social-proof__title {
+    color: var(--veryDark-magenta);
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: -1.43px;
+    line-height: 32px;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.social-proof__text {
+    color: var(--darkGrayish-magenta);
+    font-weight: 500;
+    font-size: 1.15rem;
+    text-align: center;
+}
+
+/* --------------------------------------------
+                Reviews Component
+-------------------------------------------- */
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.reviews__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--lightGrayish-magenta);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.reviews__stars {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.reviews__text {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--veryDark-magenta);
+}
+
+/* --------------------------------------------
+             Testimonials Component
+-------------------------------------------- */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.testimonials__card {
+    background-color: var(--veryDark-magenta);
+    border-radius: 0.5rem;
+    padding: 2.5rem 1.5rem;
+}
+
+.testimonials__card__user-info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.testimonials__card__user-pic {
+    border-radius: 100%;
+    max-width: 2.8rem;
+}
+
+.testimonials__card__user-name {
+    font-weight: 700;
+    color: var(--white);
+}
+
+.testimonials__card__user-verified {
+    color: var(--soft-pink);
+    font-weight: 400;
+}
+
+.testimonials__card__text {
+    color: var(--white);
+    font-size: 1.05rem;
+    letter-spacing: -0.3px;
+    line-height: 22px;
+}
+
+/* --------------------------------------------
+                Media Queries
+-------------------------------------------- */
+@media only screen and (min-width: 68.75em) {
+    body {
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+    }
+
+    body::before {
+        content: url('/images/bg-pattern-top-desktop.svg');
+    }
+
+    body::after {
+        content: url('/images/bg-pattern-bottom-desktop.svg');
+    }
+
+    .social-proof-and-reviews__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+
+    .social-proof {
+        width: 50%;
+    }
+
+    .social-proof__title,
+    .social-proof__text {
+        text-align: left;
+    }
+
+    .social-proof__title {
+        font-size: 3.5rem;
+        line-height: 48px;
+        letter-spacing: -2px;
+        max-width: 25rem;
+    }
+
+    .social-proof__text {
+        max-width: 30rem;
+    }
+
+    .reviews {
+        width: 50%;
+        align-items: center;
+    }
+
+    .reviews__card {
+        min-width: 27rem;
+        flex-direction: row;
+    }
+
+    .reviews__card:nth-child(1) {
+        margin-right: auto;
+    }
+
+    .reviews__card:nth-child(3) {
+        position: relative;
+        margin-left: auto;
+    }
+
+    .testimonials {
+        flex-direction: row;
+        align-items: center;
+        min-height: 16rem;
+    }
+
+    .testimonials__card:nth-child(1) {
+        margin-bottom: auto;
+    }
+
+    .testimonials__card:nth-child(3) {
+        margin-top: auto;
+    }
+}
